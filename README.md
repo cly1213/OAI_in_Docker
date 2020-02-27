@@ -31,10 +31,8 @@ cd openairinterface5g
 ## R14 version
 git checkout -b edb74831dabf79686eb5a92fbf8fc06e6b267d35
 git branch -v
-```
-```shell=
-source oaienv
 
+source oaienv
 cd cmake_targets
 sudo ./build_oai -I --eNB -x --install-system-files -w USRP --install-optional-packages
 
@@ -43,8 +41,8 @@ sudo ./build_oai -I --eNB -x --install-system-files -w USRP --install-optional-p
 
 #verify that USRP is working
 $ uhd_find_devices
-
 $ uhd_usrp_probe 
+
 ```
 ## Final test and verification
 ```bash=
