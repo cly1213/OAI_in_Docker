@@ -55,4 +55,6 @@ cd cmake_targets/lte_build_oai/build
 ```
 
 Also you can commit container into image
+```bash=
 $ sudo docker commit containerID yourIamgeName
+```
