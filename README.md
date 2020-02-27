@@ -7,11 +7,11 @@ sudo docker images ls
 ```
 
 ## Run the docker images.
-### docker privileged mode
+### Docker privileged mode
 ```shell=
 sudo docker run -t -i --net=host --privileged --cap-add=ALL -v /dev:/dev -v /usr/src:/usr/src -v /lib/modules:/lib/modules --name="oai_enb" ubuntu:18.04 /bin/bash
 ```
-#### in docker
+#### In container
 ```shell=
 apt-get update
 apt-get install net-tools vim git iputils-ping sudo software-properties-common git wget psmisc -y
