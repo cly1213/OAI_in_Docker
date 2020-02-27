@@ -8,9 +8,6 @@ sudo docker images ls
 
 ## Run the docker images.
 ### docker privileged mode
-
-https://stackoverflow.com/questions/33013539/docker-loading-kernel-modules
-https://rancher.com/docs/os/v1.1/en/configuration/kernel-modules-kernel-headers/
 ```shell=
 sudo docker run -t -i --net=host --privileged --cap-add=ALL -v /dev:/dev -v /usr/src:/usr/src -v /lib/modules:/lib/modules --name="oai_enb" ubuntu:18.04 /bin/bash
 ```
@@ -41,14 +38,10 @@ source oaienv
 cd cmake_targets
 sudo ./build_oai -I --eNB -x --install-system-files -w USRP --install-optional-packages
 
-#OR===================================================================
+# -I install SW packages from internet
+# compile eNB
 
-./cmake_targets/build_oai -I  # install SW packages from internet
-./cmake_targets/build_oai -w USRP --eNB --UE # compile eNB and UE
-
-#There might be some errors in installation but its okay.
 #verify that USRP is working
-
 $ uhd_find_devices
 
 $ uhd_usrp_probe 
