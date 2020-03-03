@@ -9,7 +9,7 @@ sudo docker images ls
 ## Run the docker images.
 ### Docker privileged mode
 ```shell=
-sudo docker run -t -i --net=host --privileged --cap-add=ALL -v /dev:/dev -v /usr/src:/usr/src -v /lib/modules:/lib/modules --name="oai_enb" ubuntu:18.04 /bin/bash
+sudo docker run -t -i --net=my-network --privileged --cap-add=ALL -v /dev:/dev -v /usr/src:/usr/src -v /lib/modules:/lib/modules --name="oai_enb" ubuntu:18.04 /bin/bash
 ```
 #### In container
 ```shell=
