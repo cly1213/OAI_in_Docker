@@ -49,10 +49,3 @@ cd ~/openairinterface5g; source oaienv
 cd cmake_targets/lte_build_oai/build
 ./lte-softmodem -O ~/enb.10MHz.b200
 ```
-
-Also you can commit container into image
-```bash=
-$ sudo docker commit containerID yourIamgeName
-```
-## Install this configuration for eNB
-enb.10MHz.b200
