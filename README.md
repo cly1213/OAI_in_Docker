@@ -36,9 +36,6 @@ source oaienv
 cd cmake_targets
 sudo ./build_oai -I --eNB -x --install-system-files -w USRP --install-optional-packages
 
-# -I install SW packages from internet
-# compile eNB
-
 #verify that USRP is working
 $ uhd_find_devices
 $ uhd_usrp_probe 
