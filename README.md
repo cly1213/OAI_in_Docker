@@ -55,3 +55,4 @@ $ sudo docker commit containerID yourIamgeName
 ```
 ## Install this configuration for eNB
 eNB config
+enb.10MHz.b200
