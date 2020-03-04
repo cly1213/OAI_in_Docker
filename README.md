@@ -47,7 +47,6 @@ $ uhd_usrp_probe
 ```
 ## Final test and verification
 ```bash=
-sudo bash
 cd ~/openairinterface5g; source oaienv
 cd cmake_targets/lte_build_oai/build
 ./lte-softmodem -O ~/enb.10MHz.b200
