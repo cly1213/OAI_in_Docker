@@ -1,5 +1,7 @@
 # OAI_in_Docker
 To be continued...
+My work note: https://hackmd.io/SoYgmw6nQgmKLIRRkeDeOw
+
 # OAI eNB with Docker Container on Ubuntu 18.04
 ## Pull the Ubuntu image from Docker hub.
 ```shell=
